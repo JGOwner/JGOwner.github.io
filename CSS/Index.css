@@ -1,0 +1,105 @@
+/*Ideas:    Sun going down, you can see the moon better
+            Certain things you can see on the ground
+
+*/
+
+/*Things to use for Responsiveness:
+    > Breakpoints
+    > vw, vh, % etc.
+    > max and min width/height
+    > Nested Objects
+    > Flow
+*/
+
+@font-face {
+    font-family: LS;
+    src: url('../Fonts/league-spartan/league-spartan-master/LeagueSpartan-Bold.otf');
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: darkgrey;
+    overflow: hidden;
+    font-family: LS;
+}
+
+
+/*-----Containers-----*/
+
+.container {
+    scroll-snap-align: end;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(50, 50, 50, 255);
+    margin: 0;
+    border-top: lightgrey solid 0.1vw;
+    position: inherit;
+    float: left;
+}
+
+#totalScreen {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scroll-snap-type: y proximity;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    position: absolute;
+}
+
+#navbar {
+    width: 100vw;
+    height: 6vh;
+    margin-top: 0;
+    background-color: transparent;
+    position: fixed;
+    float: left;
+    overflow: hidden;
+    border: lightgrey solid 0.1vw;
+    transition: margin-top 0.3s;
+    overflow: hidden;
+    z-index: 1;
+}
+
+#navbar.hide {
+    margin-top: -6vh;
+}
+
+#navbar #back {
+    float: left;
+    margin-top: 1vh;
+    margin-left: 1vw;
+}
+
+/*-----Texts-----*/
+
+.container h1 {
+    color: white;
+    margin-top: 8vh;
+    margin-left: 1vw;
+}
+
+
+/*-----Scrollbar-----*/
+
+::-webkit-scrollbar-thumb {
+    width: 0.5vw;
+    border-radius: 0.25vw;
+    background-color: lightgrey;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: blue;
+}
+
+::-webkit-scrollbar-track {
+    width: 0.5vw;
+    background-color: transparent;
+}
+
+::-webkit-scrollbar {
+    width: 0.5vw;
+    background-color: black;
+}

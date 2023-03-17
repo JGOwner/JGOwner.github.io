@@ -1,0 +1,32 @@
+#navbar a {
+    text-decoration: none;
+    background-color: transparent;
+    padding: 1vh 1vw;
+    width: fit-content;
+    height: fit-content;
+    float: right;
+    margin-right: 2vw;
+    border-radius: 2vw;
+    color: white;
+    transition: 0.3s;
+}
+
+#navbar a:first-child {
+    margin-right: 0;
+}
+
+#navbar a:hover {
+    background-color: cadetblue;
+    transition: 0.5s;
+}
+
+.btnHolder {
+    float: right;
+    width: max-content;
+    height: max-content;
+    border-left: white solid 0.1vw;
+    transform: translate(0, 0.3vw);
+    border-radius: 2vw;
+    margin-right: 2vw;
+    padding: 0.3vw 0.3vw;
+}
