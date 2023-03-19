@@ -33,9 +33,55 @@ body {
     height: 100vh;
     background-color: rgb(50, 50, 50, 255);
     margin: 0;
+    padding: 0;
     border-top: lightgrey solid 0.1vw;
     position: inherit;
     float: left;
+}
+
+.project-box {
+    float: left;
+    padding: 0;
+    height: 60vh;
+    width: 20vw;
+    margin-left: 2.5vw;
+    border: white solid 0.1vw;
+}
+
+.project-textbox {
+    height: 80%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: white solid 0.1vw;
+}
+
+.btn-placeholder {
+    margin: auto;
+    height: 5vh;
+    width: 10vw;
+    border: red solid 0.1vw;
+}
+
+.btn {
+    color: white;
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+.learnmore::before {
+    position: absolute;
+    background-color: cadetblue;
+    height: 0%;
+    width: 100%;
+}
+
+.learnmore:hover:before {
+    height: 100;
 }
 
 #totalScreen {
@@ -75,12 +121,16 @@ body {
 
 /*-----Texts-----*/
 
+h4 {
+    color: white;
+    margin: 0.5vw;
+}
+
 .container h1 {
     color: white;
     margin-top: 8vh;
     margin-left: 1vw;
 }
-
 
 /*-----Scrollbar-----*/
 

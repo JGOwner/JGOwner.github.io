@@ -1,0 +1,90 @@
+.buttonbox {
+    width: 100vw;
+    height: 80vh;
+    margin-top: 10vh;
+    border: white solid 0.1vw;
+}
+
+.btn {
+    margin: auto;
+    width: 5vw;
+    height: 4vh;
+    background: none;
+    top: 38vh;
+    left: 47.5vw;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    cursor: pointer;
+    border: white solid 0.1vw;
+    position: relative;
+    z-index: 1;
+}
+
+.btn::before {
+    content:'';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-color: white;
+    transform: scaleX(0);
+    /*transform-origin: bottom;*/
+    transition: 0.3s;
+}
+
+.btn:hover:before,
+.btn:focus:before {
+    transform: scaleX(1);
+    transition: 0.3s;
+}
+
+.btn:hover,
+.btn:focus {
+    color: black;
+    transition: 0.3s;
+}
+
+.testbox {
+    width: 20vw;
+    height: 60vh;
+    border: white solid 0.1vw;
+    float: left;
+    margin-left: 2vw;
+    margin-top: 10vh;
+    box-shadow: none;
+    transition: 0.5s;
+    background-color: white;
+}
+
+.testbox:hover,
+.testbox:focus {
+    box-shadow: 0 0 2vw black;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.ul-textbox {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.li-test:first-child {
+    margin-left: 5vw;
+}
+
+.hidden {
+    transform: translateX(-10vw);
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    transition: transform 0.5s ease-out;
+}
+
+.show {
+    transform: translateX(0);
+    opacity: 1;
+}
